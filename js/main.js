@@ -1,37 +1,25 @@
 //Create a street fighter character class that makes fighting game characters with 4 properties and 3 methods
 
-let streetFighter = {
-  bodytype: 'built',
-  height: 'tall',
-  weight: 165,
-  teamColor: 'blue'
-}
-
-streetFighter.rightPunch = function rp(){console.log('Punch Right')}
-
-
-//Leon's way:
-class fightingGameCharacter{
-  constructor(punch, kick, specialMove, health){//parameters
-    this.punch = punch //setting the properties for the objects
-    this.kick - kick 
-    this.specialmove = specialMove
-    this.catchPhase = catchPhase
+class SuperMonkeyBall{
+  constructor(name, weight, speed, specialDance){
+  this.name = name
+  this.weight = weight
+  this.speed = speed
+  this.specialDance = specialDance
   }
 
-taunt(){
-  alert(`Yu can't handle my ${this.specialMove}`)
+moveFoward(){
+  console.log('Up')
 }
-sayCatchPhase(){
-  alert(this.catchPhase)
+moveBackwards(){
+  alert('Down')
 }
-pause(){
-  console.log('Taking a break')
-}
-
+jump(){
+  console.log(`${specialDance}`)
 }
 
+}
 
-
-//typed in console: let ryu = new finghtGameCharater('high', 'kdfmdf', 'ijijfef', 'getoverhere')
-//ryu.taunt()
+let Ashley = new SuperMonkeyBall('Ashley', 5, 'fast', 'twirl' )
+let Ajai = new SuperMonkeyBall('Ajai', 7, 'medium', 'duggy' )
+let Mimi = new SuperMonkeyBall('Mimi', 4, 'superfast', 'twerks')
